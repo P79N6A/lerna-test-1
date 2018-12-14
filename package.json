@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "test": "mocha ./packages/**/test/**/*.test.js --reporter spec",
+    "cover": "nyc --reporter=lcov npm test"
+  },
+  "devDependencies": {
+    "lerna": "^3.6.0"
+  },
+  "dependencies": {
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
